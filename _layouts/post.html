@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="The online web designer and developer portfolio by Liz.">
+    <meta name="keywords" content="Web developer, designer, front end developer, portfolio, resume">
+    <meta name="author" content="liz">
+
+    <title>{{page.title}} | Portfolio by Liz</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="http://static.tumblr.com/twte3d7/H8Glm663z/masonry.js"></script>
+    <script type="text/javascript">
+$(window).load(function () {
+$('#workTwo').masonry({
+itemSelector : ".grid",
+},
+function() { $('#workTwo').masonry({ appendedContent: $(this) }); }
+);
+});
+</script>
+
+<script src="//static.tumblr.com/ihhnoee/12Cotb0p2/jquery.style-my-tooltips.js"></script>
+
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("a[title]").style_my_tooltips({
+                tip_follows_cursor:false,
+                tip_delay_time:100,
+                tip_fade_speed:300,
+            attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+    <script src="/index.js"></script>
+    <link href="/index.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
+
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+            <!-- Mobile Header -->
+            <div class="row" id="mobile-menu">
+            <div class="col-12">
+                <div class="dropdown">
+                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="https://raw.githubusercontent.com/byliz/logos/master/bylizlogotransparent.png" id="mobile-logo" class="img-fluid"><i class="fa fa-plus" aria-hidden="true"></i>
+  </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/"><i class="fa fa-fw fa-heart" aria-hidden="true"></i> Work</a>
+                                <a class="dropdown-item" href="http://byliz.org" target="_blank"><i class="fa fa-fw fa-code" aria-hidden="true"></i> Blog</a>
+                                <a class="dropdown-item" href="/about"><i class="fa fa-fw fa-pencil" aria-hidden="true"></i> About</a>
+                                <a class="dropdown-item" href="/contact"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> Contact</a>
+                            </div>
+                        </div>
+</div>
+            </div>
+            <!-- End Mobile Header -->
+            <div class="row" id="menu"> <!-- Header -->
+                <div class="col-12">
+                    
+                        <div class="menu-items">
+                            <span>
+                        <a href="/" id="work-link"> Work </a>
+                        <a href="http://byliz.org" target="_blank" id="blog-link"> Blog </a>
+                        <a href="/" title="Portfolio by Liz"><img src="https://raw.githubusercontent.com/byliz/logos/master/bylizlogo.png" class="img-fluid" id="logo"></a>
+                        <a href="/about" id="extra-link"> About </a>
+                        <a href="/contact" id="contact-link"> Contact </a>
+                        </span>
+                        </div>
+                        
+                    
+                </div>
+            </div> <!-- End Header -->
+            
+            <div class="row"> <!-- Intro -->
+                <div class="col-12">
+                    <div id="intro">
+                        <p>Hey, this portfolio was made <a class="marking" href="http://byliz.org" target="_blank" title="ByLiz.org">by me, Liz</a>, a student front end developer from NJ, USA. See my projects on <a href="https://github.com/byliz" target="_blank" title="@byliz">Github</a>, connect with me on <a href="https://linkedin.com/in/byliz" target="_blank" title="@ByLiz">LinkedIn</a>, or just see what I'm up to on <a href="https://twitter.com/theTinkerSpace" target="_blank" title="@theTinkerSpace">Twitter</a>!</p>
+                    </div>
+                    <div id="cute-divider"></div>
+                </div>
+            </div> <!-- End Intro -->
+            <div class="row"> <!-- Body -->
+                <div class="col-12">
+                    <div id="postcontent">
+                    {{content}}
+                	</div>
+                    
+                    <div id="cute-divider"></div>
+                    <div id="comments">
+                    {% if page.comments %}
+                        <div id="disqus_thread"></div>
+                        <script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://byliz.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
+</div>
+                </div>
+            </div> <!-- End Body -->
+            <div class="row"> <!-- Footer -->
+                <div class="col-12">
+                    <div id="footer">
+                        <p>© 2016 - <script type="text/javascript">
+                                var year = new Date();
+                                document.write(year.getFullYear());
+                            </script> by Liz</p>
+                    </div>
+                </div>
+            </div> <!-- End Footer -->
+        </div>
+        <script id="dsq-count-scr" src="//byliz.disqus.com/count.js" async></script>
+    </body>
+</html>

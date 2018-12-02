@@ -1,0 +1,21 @@
+---
+layout: default
+title: Contact
+---
+
+
+<div id="contact">
+    <h5 style="text-align: center;">Contact</h5>
+    
+<form onsubmit="return formValidation();" action="https://formspree.io/hello@byliz.org" method="post">
+	<div id="alert"></div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email Address</label>
+                <input type="email" name="_replyto" id="_replyto">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="btn btn-secondary" style="width: 100%">Send</button>
+              </form>
+          </div>

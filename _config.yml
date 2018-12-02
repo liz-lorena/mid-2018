@@ -1,0 +1,48 @@
+# Site Info
+title:              "Portfolio by Liz"
+description:        "Portfolio."
+
+# Author Info
+author_name:        "Liz"
+author_email:       hello@byliz.org
+github_username:    byliz
+twitter_username:   _byliz_
+
+# Site Settings
+baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+permalink:          /blog/posts/:title # Post permalink
+timezone:           America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: byliz
+
+# Site Build
+highlighter: rouge
+markdown: kramdown
+gems:
+  - jekyll-sitemap
+  - tzinfo
+plugins:
+  - jekyll-feed
+
+
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+layout: "post"

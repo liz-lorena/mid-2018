@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123712244-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123712244-1');
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="The online web designer and developer portfolio by Liz.">
+    <meta name="keywords" content="Web developer, designer, front end developer, portfolio, resume">
+    <meta name="author" content="liz">
+
+    <title>{{page.title}} | Portfolio by Liz</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    
+
+<script src="//static.tumblr.com/ihhnoee/12Cotb0p2/jquery.style-my-tooltips.js"></script>
+
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("a[title]").style_my_tooltips({
+                tip_follows_cursor:false,
+                tip_delay_time:100,
+                tip_fade_speed:300,
+            attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+    <script src="/index.js"></script>
+    <link href="/index.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/byliz/logos/master/lblogosquare.png">
+
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+            <!-- Mobile Header -->
+            <div class="row" id="mobile-menu">
+            <div class="col-12">
+                <div class="dropdown">
+                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <img src="https://raw.githubusercontent.com/byliz/logos/master/lblogosquare.png" id="mobile-logo" class="img-fluid"><i class="fa fa-plus" aria-hidden="true"></i>
+  </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/"><i class="fa fa-fw fa-heart" aria-hidden="true"></i> Work</a>
+                                <a class="dropdown-item" href="http://byliz.org" target="_blank"><i class="fa fa-fw fa-code" aria-hidden="true"></i> Blog</a>
+                                <a class="dropdown-item" href="/about"><i class="fa fa-fw fa-pencil" aria-hidden="true"></i> About</a>
+                                <a class="dropdown-item" href="/contact"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> Contact</a>
+                            </div>
+                        </div>
+</div>
+            </div>
+            <!-- End Mobile Header -->
+            <div class="row" id="menu"> <!-- Header -->
+                <div class="col-12">
+                    
+                        <div class="menu-items">
+                            <span>
+                        <a href="/" id="work-link"> Work </a>
+                        <a href="http://byliz.org" target="_blank" id="blog-link"> Blog </a>
+                        <a href="/" title="Portfolio by Liz"><img src="https://raw.githubusercontent.com/byliz/logos/master/lblogocircle.png" class="img-fluid" id="logo"></a>
+                        <a href="/about" id="extra-link"> About </a>
+                        <a href="/contact" id="contact-link"> Contact </a>
+                        </span>
+                        </div>
+                        
+                    
+                </div>
+            </div> <!-- End Header -->
+            
+            <div class="row"> <!-- Intro -->
+                <div class="col-12">
+                    <div id="intro">
+                        <p>Hello, this portfolio was made <a class="marking" href="http://byliz.org" target="_blank" title="ByLiz.org">by me, Liz</a>, a student front end developer from NJ, USA. See my projects on <a href="https://github.com/byliz" target="_blank" title="@ByLiz">Github</a>, connect with me on <a href="https://linkedin.com/in/byliz" target="_blank" title="@ByLiz">LinkedIn</a>, or just see what I'm up to on <a href="https://twitter.com/thetinkerspace" target="_blank" title="@theTinkerSpace">Twitter</a>! See all my active profiles <a href="http://links.byliz.org" target="_blank" title="Links.ByLiz.org">here</a>.</p>
+                    </div>
+                    <div id="cute-divider"></div>
+                </div>
+            </div> <!-- End Intro -->
+            <div class="row"> <!-- Body -->
+                <div class="col-12">
+                    
+                    {{content}}
+                    
+                    <div id="cute-divider"></div>
+                </div>
+            </div> <!-- End Body -->
+            <div class="row"> <!-- Footer -->
+                <div class="col-12">
+                    <div id="footer">
+                        <p>© 2016 - <script type="text/javascript">
+                                var year = new Date();
+                                document.write(year.getFullYear());
+                            </script> by Liz</p>
+                    </div>
+                </div>
+            </div> <!-- End Footer -->
+        </div>
+        
+    </body>
+</html>

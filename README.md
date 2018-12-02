@@ -1,2 +1,2 @@
-# portfolio-2018-v2
-My portfolio website from later 2018. 
+# byliz.github.io
+My current responsive portfolio website handmade using HTML, CSS, Bootstrap, Javascript, and Jekyll.
