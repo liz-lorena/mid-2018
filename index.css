@@ -426,7 +426,7 @@ article {
 }
 
 form::before {
-	content: "hello@byliz.org";
+	content: "liz@cozymaus.com";
 	display: block;
 	bottom: 0;
 	color: white;
