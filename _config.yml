@@ -5,8 +5,8 @@ description:        "Portfolio."
 # Author Info
 author_name:        "Liz Lorena Berberena"
 author_email:       hello@lizlorena.com
-github_username:    cozymaus
-twitter_username:   cozymaus
+github_username:    lizberberena
+twitter_username:   lizberberena
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
@@ -17,7 +17,7 @@ timezone:           America/New_York # https://en.wikipedia.org/wiki/List_of_tz_
 disqus:
     # Leave shortname blank to disable comments site-wide.
     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: cozymaus
+    shortname: lizberberena
 
 # Site Build
 highlighter: rouge
