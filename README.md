@@ -9,7 +9,3 @@ This was my fourth portfolio website I used from 2018 to 2019.
 <p>Here's the mobile site in action:</p>
 
 <img src="https://irisoflys.com/img/portfolio2018onmobile.gif" alt="Gif of Fourth Portfolio on Mobile" class="img-fluid"/>
-
-<p>Here's a <a href="https://addons.mozilla.org/en-US/firefox/addon/fireshot/" target="_blank" rel="nofollow">screenshot</a> of the entire landing page with graphics of all my best projects thus far:</p>
-
-<img src="https://irisoflys.com/img/portfoliobylizorg.png" alt="Screenshot of Entire Fourth Portfolio on Desktop" class="img-fluid"/>
