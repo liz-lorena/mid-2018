@@ -1,12 +1,11 @@
 # Site Info
-title:              "Portfolio of Lys"
+title:              "Portfolio of Liz"
 description:        "Portfolio."
 
 # Author Info
-author_name:        "Iris of Lys"
-author_email:       lys@irisoflys.com
-github_username:    irisoflys
-twitter_username:   irisoflys
+author_name:        "Liz Lorena Berberena"
+author_email:       liz@lizlorena.com
+github_username:    lizberberena
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
@@ -17,7 +16,7 @@ timezone:           America/New_York # https://en.wikipedia.org/wiki/List_of_tz_
 disqus:
     # Leave shortname blank to disable comments site-wide.
     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: irisoflys
+    shortname: lizlorena
 
 # Site Build
 highlighter: rouge
